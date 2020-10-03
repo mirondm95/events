@@ -1,120 +1,90 @@
-/* poppins-regular - latin */
 
-@font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/poppins-v13-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local('Poppins Regular'), local('Poppins-Regular'),
-         url('../fonts/poppins-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/poppins-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/poppins-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/poppins-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/poppins-v13-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
-  }
-  /* poppins-italic - latin */
-  @font-face {
-    font-family: 'Poppins';
-    font-style: italic;
-    font-weight: 400;
-    src: url('../fonts/poppins-v13-latin-italic.eot'); /* IE9 Compat Modes */
-    src: local('Poppins Italic'), local('Poppins-Italic'),
-         url('../fonts/poppins-v13-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/poppins-v13-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/poppins-v13-latin-italic.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/poppins-v13-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/poppins-v13-latin-italic.svg#Poppins') format('svg'); /* Legacy iOS */
-  }
-  /* poppins-700 - latin */
-  @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/poppins-v13-latin-700.eot'); /* IE9 Compat Modes */
-    src: local('Poppins Bold'), local('Poppins-Bold'),
-         url('../fonts/poppins-v13-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/poppins-v13-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/poppins-v13-latin-700.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/poppins-v13-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/poppins-v13-latin-700.svg#Poppins') format('svg'); /* Legacy iOS */
-  }
+* {
+    box-sizing: border-box;
+}
 
-  *{
-      box-sizing: border-box;
-  }
-  a,button {
-      transition: all .3s ease-in-out;
-  }
+a, button {
+    transition: all .3s ease-in-out;
+}
 
-  a{
-      text-decoration:none;
-      color: inherit;
-  }
+a {
+    text-decoration: none;
+}
 
-  body {
-      font: 400 22px 'Poppins', sans-serif;
-      color: #444;
-  }
+body {
+    font: 400 22px 'Poppins', sans-serif;
+    color: #444;
+}
 
-  .container {
-      max-width: 1170px;
-      padding: 0 15px;
-      margin: 0 auto;
-  }
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 
-  .box{
-      outline: 1px solid orange;
-      padding: 90px 0;
-  }
+.box {
+    outline: 1px solid orange;
+    padding: 90px 0;
+}
 
-.box--padding-lg{
+.box--padding-lg {
     padding: 140px 0;
 }
-.box--bg-pink{
+
+.box--bg-pink {
     background-color: #ffe9eb;
 }
 
-.box--bg-grey{
+.box--bg-grey {
     background-color: #eeeeee;
 }
 
 .box--bg-gradient {
-    background-image: linear-gradient(to bottom #333399 50%, #ff00cc 100%);
+    background-image: linear-gradient(to bottom, #333399 50%, #fe00cc 100%);
 }
 
-h1, h2{
+h1, h2 {
     font-size: 62px;
 }
 
 
-h3{
- font-size: 36px;
+h3 {
+    font-size: 36px ;
 }
 
-h4{
-font-size: 30px;
+h4 {
+    font-size: 30px;
 }
 
 h5 {
-font-size: 24px;
+    font-size: 24px;
 }
 
 header {
-    color:white;
-    background-color: lightcoral;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
-header a {
-    color:inherit;
+
+header a { 
+    color: inherit;
 }
 
 .logo {
-    font-weight: 700;
     font-size: 33px;
+    font-weight: 700;
 }
+
 .logo:hover,
 .logo:focus,
-.logo:active{
-    color:#e71cb4
+.logo:active {
+    color: #e71cb4
+}
+
+nav ul {
+    padding: 0
 }
 
 nav ul li {
@@ -122,23 +92,80 @@ nav ul li {
     margin-left: 25px;
 }
 
-nav ul li
-
 nav ul li a {
+    padding: 5px 0;
+    font-weight: 700;
     border-bottom: 1px solid transparent;
-
+    font-size: 16px;
 }
 
-
-nav ul li a:focus,
 nav ul li a:hover,
-nav ul li a:active{
+nav ul li a:focus,
+nav ul li a:active {
     color: #e71cb4;
     border-color: #e71cb4;
 }
 
-header .container{
+
+header .container {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
+}
+
+
+.hero {
+    min-height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero__title {
+    margin-bottom: 30px;
+}
+
+.hero__text {
+    font-size: 30px;
+    margin-bottom: 70px;
+
+}
+
+.btn {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    background-color: #e71cb4;
+    border: 2px solid #e71cb4;
+    border-radius: 5px;
+    padding: 15px 50px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.btn--lg{
+    font-size: 22px;
+    padding: 22px 80px;
+
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    color:#e71cb4;
+    background-color: #fff;
+}
+
+.btn--transparent{
+    background-color: transparent;
+    border-color: white;
+}
+
+.btn--transparent:hover,
+.btn--transparent:focus,
+.btn--transparent:active {
+    color: #444;
 }
